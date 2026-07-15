@@ -52,6 +52,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjornales15/aurum-ouath-v2.git"
+    "url": "git+https://github.com/aurum-v2/aurum-ouath-v2"
   }
 }
