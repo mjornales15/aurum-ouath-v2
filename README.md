@@ -4,6 +4,13 @@ Reusable **Continue with Aurum** (OAuth PKCE) package: config-driven storage, po
 
 ## Install (GitHub Packages)
 
+Then:
+
+```bash
+npm install @aurum-v2/oauth-v2
+```
+
+
 ```tsx
 import { AurumAuthProvider, useAurumAuth } from '@aurum-v2/oauth-v2'
 
