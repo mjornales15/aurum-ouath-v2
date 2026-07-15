@@ -1,4 +1,4 @@
-# `@mjornales15/oauth-v2`
+# `@aurum-v2/oauth-v2`
 
 Reusable **Continue with Aurum** (OAuth PKCE) package: config-driven storage, popup sign-in, React context, and hooks.
 
@@ -7,40 +7,25 @@ Reusable **Continue with Aurum** (OAuth PKCE) package: config-driven storage, po
 In the consuming app `.npmrc`:
 
 ```
-@mjornales15:registry=https://npm.pkg.github.com
+@aurum-v2:registry=https://npm.pkg.github.com
 ```
 
 Then:
 
 ```bash
-npm install @mjornales15/oauth-v2
+npm install @aurum-v2/oauth-v2
 ```
 
 Log in once if needed:
 
 ```bash
-npm login --scope=@mjornales15 --registry=https://npm.pkg.github.com
-```
-
-## Install (local / workspace)
-
-```bash
-# from another app
-npm install ../aurum-ouath-v2
-# or in package.json:
-# "@mjornales15/oauth-v2": "file:../aurum-ouath-v2"
-```
-
-```bash
-cd aurum-ouath-v2
-npm install
-npm run build
+npm login --scope=@aurum-v2 --registry=https://npm.pkg.github.com
 ```
 
 ## Quick start
 
 ```tsx
-import { AurumAuthProvider, useAurumAuth } from '@mjornales15/oauth-v2'
+import { AurumAuthProvider, useAurumAuth } from '@aurum-v2/oauth-v2'
 
 root.render(
   <AurumAuthProvider
@@ -99,7 +84,7 @@ function Header() {
 
 ```tsx
 import { useEffect, useState } from 'react'
-import { useAurumAuth } from '@mjornales15/oauth-v2'
+import { useAurumAuth } from '@aurum-v2/oauth-v2'
 
 export function OauthCallbackPage() {
   const { client } = useAurumAuth()
@@ -148,7 +133,7 @@ Use a **different `storageKey` per product** so sessions never overwrite each ot
 ## Imperative (no React)
 
 ```ts
-import { createAurumOauthClient } from '@mjornales15/oauth-v2'
+import { createAurumOauthClient } from '@aurum-v2/oauth-v2'
 
 const client = createAurumOauthClient({
   clientId: '...',
